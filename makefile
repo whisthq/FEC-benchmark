@@ -1,4 +1,4 @@
-FLAGS=  -O2 -ggdb -I . -lstdc++  #-Wno-stringop-overflow
+FLAGS=  -O2 -ggdb -I . -lstdc++  --std=c++11 #-Wno-stringop-overflow
 
 all: wh.out fecal.out lugi.out zfec.out cm256.out lh.out leo.out mem.out
 
