@@ -9,7 +9,6 @@
 using namespace std;
 
 
-
 typedef unsigned long long u64_t; 
 u64_t get_current_time_us()
 {
