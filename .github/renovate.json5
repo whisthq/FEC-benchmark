@@ -1,0 +1,42 @@
+{
+  labels: ["dependencies"],
+
+  dependencyDashboard: true,
+  dependencyDashboardApproval: true,
+
+  // We want at most 10 PRs per hour, at most 2 at a time
+  prHourlyLimit: 10,
+  prConcurrentLimit: 2,
+
+  // We target various path prefixes to group those PRs together
+  packageRules: [
+    {
+      matchPaths: ["cm256/"],
+      groupName: "cm256",
+    },
+    {
+      matchPaths: ["fecal/"],
+      groupName: "fecal",
+    },
+    {
+      matchPaths: ["leopard/"],
+      groupName: "leopard",
+    },
+    {
+      matchPaths: ["longair/"],
+      groupName: "longhair",
+    },
+    {
+      matchPaths: ["rs/"],
+      groupName: "rs",
+    },
+    {
+      matchPaths: ["wirehair/"],
+      groupName: "wirehair",
+    },
+    {
+      matchPaths: ["zfec/"],
+      groupName: "zfec,
+    },
+  ],
+}
